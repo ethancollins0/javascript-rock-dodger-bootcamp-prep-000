@@ -85,7 +85,7 @@ window.requestAnimationFrame(moveRock)
       if (checkCollision(rock[i]) === true) {
         endGame()
       }
-      if (rock[i].style.top > 200) {
+      if (rock[i].style.top < 200) {
         rock.splice(i, 1)
       }
 
