@@ -80,7 +80,7 @@ window.requestAnimationFrame(moveRock)
         rock[i].remove()
       } else {
         rockTop = positionToInteger(rock[i].style.top)
-        rock[i].style.top = `${rockTop + 2}px`
+        rock[i].style.top = `${rockTop + 20}px`
       }
 
     }
