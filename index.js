@@ -118,8 +118,10 @@ window.requestAnimationFrame(moveRock)
  */
 function endGame() {
   gameInterval.clearInterval()
-  $('rock').remove()
+  console.log('interval cleared')
+  //$('rock').remove()
   ROCKS = []
+  console.log('rocks array zeroed')
   window.removeEventListener('keydown', moveDodger)
   alert('YOU LOSE!')
 }
