@@ -77,7 +77,7 @@ window.requestAnimationFrame(moveRock)
    */
   function moveRock() {
     var rockList = document.getElementsByClassName('rock')
-    for (i = 0; i < rockList; i++) {
+    for (i = 0; i < rockList.length; i++) {
 
     }
 
