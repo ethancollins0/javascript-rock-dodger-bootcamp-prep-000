@@ -123,6 +123,7 @@ function endGame() {
   ROCKS = []
   console.log('rocks array emptied')
   window.removeEventListener('keydown', moveDodger)
+  console.log('dodger movement listener removed')
   alert('YOU LOSE!')
 }
 
