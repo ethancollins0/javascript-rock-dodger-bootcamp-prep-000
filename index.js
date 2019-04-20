@@ -112,7 +112,7 @@ function endGame() {
 
 function moveDodger(e) {
   if (e.key === LEFT_ARROW) {
-    moveDodgerLeft()
+    window.requestAnimationFrame(moveDodgerLeft)
   }
 
   if (e.key === RIGHT_ARROW) {
