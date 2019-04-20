@@ -121,7 +121,7 @@ function endGame() {
   console.log('interval cleared')
   var rock = document.getElementsByClassName('rock')
   while (rock.length > 0) {
-    
+
   }
   console.log('rocks removed')
   window.removeEventListener('keydown', moveDodger)
