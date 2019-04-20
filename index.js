@@ -77,18 +77,16 @@ window.requestAnimationFrame(moveRock)
    */
   function moveRock() {
     var rock = document.getElementsByClassName('rock')
+    var rockPosition = 0
     for (i = 0; i < rock.length; i++) {
-
-
-    if (checkCollision() === true) {
-      endGame()
-    }
-    if (positionToInteger(rock[i].style.top) < 360) {
-      rock.splice(i, 1)
-    } else {
       rockTop = positionToInteger(rock[i].style.top)
       rock[i].style.top = `${rockTop + 2}px`
     }
+
+    if (checkCollision() === true) {
+      endGame()
+
+    if (positionToInteger(rock[i].style.top) < 400 )
 
     // implement me!
     // (use the comments below to guide you!)
@@ -111,7 +109,7 @@ window.requestAnimationFrame(moveRock)
   // Add the rock to ROCKS so that we can remove all rocks
   // when there's a collision
   ROCKS.push(rock)
-}
+
   // Finally, return the rock element you've created
   return rock
 }
