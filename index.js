@@ -73,7 +73,7 @@ window.requestAnimationFrame(moveRock)
     var rock = document.getElementsByClassName('rock')
     for (i = 0; i < rock.length; i++) {
       if (checkCollision(rock[i]) === true) {
-        endGame()
+        window.requestAnimationFrame(endGame)
       }
       if (positionToInteger(rock[i].style.top) > 400) {
         rock[i].remove()
