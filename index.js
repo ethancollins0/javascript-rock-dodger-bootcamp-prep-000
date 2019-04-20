@@ -118,7 +118,6 @@ window.requestAnimationFrame(moveRock)
  */
 function endGame() {
   clearInterval(gameInterval)
-  console.log('interval cleared')
   var rock = document.getElementsByClassName('rock')
   while (rock.length > 0) {
     rock[0].parentNode.removeChild(rock[0])
@@ -126,6 +125,7 @@ function endGame() {
   window.removeEventListener('keydown', moveDodger)
   console.log('dodger movement listener removed')
   alert('YOU LOSE!')
+  reload()
 }
 
 function moveDodger(e) {
