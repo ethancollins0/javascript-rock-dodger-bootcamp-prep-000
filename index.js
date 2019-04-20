@@ -76,7 +76,7 @@ function createRock(x) {
    * seems like a good pace.)
    */
   function moveRock() {
-    var i = 0 {
+    /* var i = 0 {
       while i < GAME.length
       var rockTop = i.style.top.replace('px', '')
       var top = parseInt(rockTop, 10)
@@ -84,7 +84,7 @@ function createRock(x) {
       if (top < 400) {
         i.style.top = `${top + 2}px`
       }
-    }
+    } */
 
 
     // implement me!
