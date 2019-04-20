@@ -84,7 +84,7 @@ window.requestAnimationFrame(moveRock)
         endGame()
       }
       console.log('test')
-      if (positionToInteger(rock[i].style.top < 100)) {
+      if (positionToInteger(rock[i].style.top) < 100) {
       console.log('above')
       }
 
