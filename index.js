@@ -123,7 +123,6 @@ function endGame() {
   while (rock.length > 0) {
     rock[0].parentNode.removeChild(rock[0])
   }
-  console.log('rocks removed')
   window.removeEventListener('keydown', moveDodger)
   console.log('dodger movement listener removed')
   alert('YOU LOSE!')
