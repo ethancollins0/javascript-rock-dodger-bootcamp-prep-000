@@ -117,11 +117,11 @@ window.requestAnimationFrame(moveRock)
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
+  gameInterval.clearInterval()
   $('rock').remove()
   ROCKS = []
   window.removeEventListener('keydown', moveDodger)
   alert('YOU LOSE!')
-  gameInterval.clearInterval()
 }
 
 function moveDodger(e) {
