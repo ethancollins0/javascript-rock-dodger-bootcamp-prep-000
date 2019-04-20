@@ -84,7 +84,7 @@ window.requestAnimationFrame(moveRock)
       if (checkCollision(rock[i]) === true) {
         endGame()
       }
-                  console.log('test')
+      console.log('test')
       if (rock[i].style.top < 100) {
         alert('lower')
       }
