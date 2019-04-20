@@ -76,6 +76,7 @@ window.requestAnimationFrame(moveRock)
    * seems like a good pace.)
    */
   function moveRock() {
+    const moveRocks = document.getElementsByClassName('rock')
     var top = 0
 
     function step() {
