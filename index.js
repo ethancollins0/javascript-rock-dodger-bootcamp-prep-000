@@ -100,7 +100,7 @@ window.requestAnimationFrame(moveRock)
 function endGame() {
   clearInterval(gameInterval)
   var rock = document.getElementsByClassName('rock')
-  $rock.remove()
+  $(rock.remove())
   window.removeEventListener('keydown', moveDodger)
   console.log('dodger movement listener removed')
   alert('YOU LOSE!')
