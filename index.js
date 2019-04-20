@@ -76,6 +76,7 @@ window.requestAnimationFrame(moveRock)
    * seems like a good pace.)
    */
   function moveRock() {
+    Game.rock.style.top += 2
     /* var i = 0 {
       while i < GAME.length
       var rockTop = i.style.top.replace('px', '')
