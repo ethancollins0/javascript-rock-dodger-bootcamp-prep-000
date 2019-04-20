@@ -76,8 +76,8 @@ window.requestAnimationFrame(moveRock)
    * seems like a good pace.)
    */
   function moveRock() {
-    var top = 0
-    rock.style.top = `${}`
+    var top = rock.style.top
+    rock.style.top = `${t}`
     // implement me!
     // (use the comments below to guide you!)
     /**
