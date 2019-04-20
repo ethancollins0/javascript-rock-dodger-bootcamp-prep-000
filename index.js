@@ -86,7 +86,7 @@ window.requestAnimationFrame(moveRock)
         endGame()
       }
 
-      
+
     }
 
     // implement me!
