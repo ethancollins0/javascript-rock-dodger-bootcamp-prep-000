@@ -84,7 +84,7 @@ window.requestAnimationFrame(moveRock)
         endGame()
       }
 
-      if (rock[i].style.top > 100) {
+      if (rock[i].style.top < 100) {
         console.log('found')
       }
 
