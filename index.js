@@ -120,7 +120,6 @@ function endGame() {
   clearInterval(gameInterval)
   console.log('interval cleared')
   //$('rock').remove()
-  ROCKS.empty()
   console.log('rocks array emptied')
   window.removeEventListener('keydown', moveDodger)
   console.log('dodger movement listener removed')
