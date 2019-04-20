@@ -109,16 +109,17 @@ function endGame() {
 }
 
 function moveDodger(e) {
+
+    if (e.which !== LEFT_ARROW && e.which !== RIGHT_ARROW) {
+      return
+    }
+
   if (e.which === LEFT_ARROW) {
     moveDodgerLeft()
   }
 
   if (e.which === RIGHT_ARROW) {
     moveDodgerRight()
-  }
-
-  if (e.which !== LEFT_ARROW && e.which !== RIGHT_ARROW) {
-    return
   }
 
   if (e.which !== LEFT_ARROW || e.which !== RIGHT_ARROW) {
