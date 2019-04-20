@@ -40,12 +40,9 @@ function checkCollision(rock) {
       return true
     } else if ((rockLeftEdge < dodgerRightEdge) && (rockRightEdge > dodgerRightEdge)) {
       return true
-    }
-                 ||
-                 === true)
-      return true
     } else {
       return false
+    }
     }
   }
 }
