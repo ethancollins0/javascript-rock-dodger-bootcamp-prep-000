@@ -111,6 +111,9 @@ function endGame() {
 }
 
 function moveDodger(e) {
+  if (e.key === LEFT_ARROW) {
+    moveDodgerLeft()
+  }
   // implement me!
   /**
    * This function should call `moveDodgerLeft()`
