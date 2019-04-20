@@ -76,14 +76,13 @@ function createRock(x) {
    * seems like a good pace.)
    */
   function moveRock() {
-    function step() {
-      GAME(rock) += 2
 
-      if (rock.style.top < 200) {
-        window.requestAnimationFrame(step)
-      }
+    var rockTop = DODGER.style.left.replace('px', '')
+    var left = parseInt(leftNumbers, 10)
+
+    if (left > 0) {
+      DODGER.style.left = `${left - 4}px`
     }
-    window.requestAnimationFrame(step)
 
     // implement me!
     // (use the comments below to guide you!)
