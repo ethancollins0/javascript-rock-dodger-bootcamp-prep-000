@@ -13,7 +13,7 @@ const START = document.getElementById('start')
 var gameInterval = null
 
 document.addEventListener('keydown', function(e) {
-  
+
 })
 /**
  * Be aware of what's above this line,
@@ -125,7 +125,7 @@ function moveDodger(e) {
 }
 
 function moveDodgerLeft() {
-  
+
 }
 
 function moveDodgerRight() {
