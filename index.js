@@ -86,7 +86,7 @@ window.requestAnimationFrame(moveRock)
         endGame()
       }
       if (rock[i].style.top < 100) {
-        rock.parentNode.removeChild(rock)
+        rock.parentNode.removeChild(rock[i])
       }
 
     }
