@@ -129,7 +129,7 @@ function moveDodger(e) {
 }
 
 function moveDodgerLeft() {
-
+  var leftNumbers = DODGER.style.left.replace('px', '')
 }
 
 function moveDodgerRight() {
