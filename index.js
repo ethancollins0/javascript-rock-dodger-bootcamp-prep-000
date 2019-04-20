@@ -12,14 +12,19 @@ const START = document.getElementById('start')
 
 var gameInterval = null
 
-document.addEventListener('keydown', function(e) {
-  if (e.which === LEFT_ARROW)
-    moveDodgerLeft()
-});
 /**
  * Be aware of what's above this line,
  * but all of your work should happen below.
  */
+
+ document.addEventListener('keydown', function(e) {
+   if (e.which === LEFT_ARROW)
+     moveDodgerLeft()
+ });
+
+ document.addEventListener('keydown', function(e) {
+   
+ });
 
 function checkCollision(rock) {
   // implement me!
