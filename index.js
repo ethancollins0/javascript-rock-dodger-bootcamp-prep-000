@@ -126,7 +126,7 @@ window.requestAnimationFrame(moveRock)
 function endGame() {
   clearInterval(gameInterval);
   ROCKS = []
-
+  document.getElementsByClassName('rock')
   window.removeEventListener('keydown', moveDodger)
   alert('YOU LOSE!')
 }
