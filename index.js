@@ -17,16 +17,6 @@ var gameInterval = null
  * but all of your work should happen below.
  */
 
- document.addEventListener('keydown', function(e) {
-   if (e.which === LEFT_ARROW)
-     moveDodgerLeft()
- });
-
- document.addEventListener('keydown', function(e) {
-   if (e.which ==== RIGHT_ARROW)
-    moveDodgerRight()
- });
-
 function checkCollision(rock) {
   // implement me!
   // use the comments below to guide you!
@@ -132,21 +122,15 @@ function moveDodger(e) {
 }
 
 function moveDodgerLeft() {
-  var leftNumbers = dodger.style.left.replace('px', '')
-  var left = parseInt(leftNumbers, 10)
 
-  if (left > 0) {
-    window.requestAnimationFrame(dodger.style.left = `${left - 4}px`)
-  }
 }
 
 function moveDodgerRight() {
-  var leftNumbers = dodger.style.left.replace('px', '')
-  var left = parseInt(leftNumbers, 10)
-
-  if (left > 0) {
-    window.requestAnimationFrame(dodger.style.left = `${left + 4}px`)
-  }
+  // implement me!
+  /**
+   * This function should move DODGER to the right
+   * (mabye 4 pixels?). Use window.requestAnimationFrame()!
+   */
 }
 
 /**
