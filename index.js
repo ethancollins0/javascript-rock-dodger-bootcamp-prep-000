@@ -116,7 +116,7 @@ function moveDodger(e) {
   }
 
   if (e.key === RIGHT_ARROW) {
-    moveDodgerRight()
+    window.requestAnimationFrame(moveDodgerRight)
   }
   // implement me!
   /**
@@ -129,7 +129,6 @@ function moveDodger(e) {
 }
 
 function moveDodgerLeft() {
-
 }
 
 function moveDodgerRight() {
