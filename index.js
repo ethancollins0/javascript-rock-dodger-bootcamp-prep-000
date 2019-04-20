@@ -79,7 +79,9 @@ function createRock(x) {
     function step() {
       rock.style.top = `${top += 2}px`
 
-      if (top < 200)
+      if (top < 200) {
+        window.requestAnimationFrame(step)
+      }
     }
     // implement me!
     // (use the comments below to guide you!)
