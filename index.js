@@ -80,9 +80,10 @@ window.requestAnimationFrame(moveRock)
     for (i = 0; i < rock.length; i++) {
       rockTop = positionToInteger(rock[i].style.top)
       rock[i].style.top = `${rockTop + 20}px`
-
+    console.log('test')
       if (checkCollision(rock[i]) === true) {
         endGame()
+            console.log('test')
       } else if (rock[i].style.top < 100) {
         alert('lower')
       }
