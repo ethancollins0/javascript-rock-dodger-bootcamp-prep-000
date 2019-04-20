@@ -76,23 +76,6 @@ window.requestAnimationFrame(moveRock)
    * seems like a good pace.)
    */
   function moveRock() {
-    var rockList = document.getElementsByClassName('rock')
-    var top = 0
-      for (i = 0; i < rockList.length; i++) {
-        rockList[i].style.top.replace('px', '')
-        top = parseInt(rockList[i], 10)
-        rockList[i].style.top = `${top + 2}px`
-      }
-    /* var i = 0 {
-      while i < GAME.length
-      var rockTop = i.style.top.replace('px', '')
-      var top = parseInt(rockTop, 10)
-
-      if (top < 400) {
-        i.style.top = `${top + 2}px`
-      }
-    } */
-
 
     // implement me!
     // (use the comments below to guide you!)
