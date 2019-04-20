@@ -76,7 +76,6 @@ window.requestAnimationFrame(moveRock)
    * seems like a good pace.)
    */
   function moveRock() {
-
     // implement me!
     // (use the comments below to guide you!)
     /**
