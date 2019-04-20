@@ -12,6 +12,9 @@ const START = document.getElementById('start')
 
 var gameInterval = null
 
+document.addEventListener('keydown', function(e) {
+  
+})
 /**
  * Be aware of what's above this line,
  * but all of your work should happen below.
@@ -122,11 +125,7 @@ function moveDodger(e) {
 }
 
 function moveDodgerLeft() {
-  // implement me!
-  /**
-   * This function should move DODGER to the left
-   * (mabye 4 pixels?). Use window.requestAnimationFrame()!
-   */
+  
 }
 
 function moveDodgerRight() {
