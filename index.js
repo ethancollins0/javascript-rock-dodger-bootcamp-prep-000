@@ -85,6 +85,8 @@ window.requestAnimationFrame(moveRock)
       if (checkCollision(rock[i]) === true) {
         endGame()
       }
+
+      
     }
 
     // implement me!
