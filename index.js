@@ -118,8 +118,6 @@ window.requestAnimationFrame(moveRock)
  */
 function endGame() {
   alert('test')
-  clearInterval(gameInterval);
-  ROCKS = []
   $('rock').remove()
   window.removeEventListener('keydown', moveDodger)
   alert('YOU LOSE!')
