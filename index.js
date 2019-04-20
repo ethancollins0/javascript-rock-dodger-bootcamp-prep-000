@@ -114,6 +114,10 @@ function moveDodger(e) {
   if (e.key === LEFT_ARROW) {
     moveDodgerLeft()
   }
+
+  if (e.key === RIGHT_ARROW) {
+    moveDodgerRight()
+  }
   // implement me!
   /**
    * This function should call `moveDodgerLeft()`
