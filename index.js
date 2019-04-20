@@ -120,6 +120,7 @@ function endGame() {
   alert('test')
   $('rock').remove()
   window.removeEventListener('keydown', moveDodger)
+  clearInterval(gameInterval);
   alert('YOU LOSE!')
 }
 
