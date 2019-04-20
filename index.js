@@ -78,6 +78,8 @@ function createRock(x) {
   function moveRock() {
     function step() {
       rock.style.top = `${top += 2}px`
+
+      if (top < 200)
     }
     // implement me!
     // (use the comments below to guide you!)
