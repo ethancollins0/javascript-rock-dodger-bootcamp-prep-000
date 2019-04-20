@@ -119,7 +119,10 @@ window.requestAnimationFrame(moveRock)
 function endGame() {
   clearInterval(gameInterval)
   console.log('interval cleared')
-  document.getElementsByClassName('rock').remove()
+  var rock = document.getElementsByClassName('rock')
+  while (rock.length > 0) {
+    
+  }
   console.log('rocks removed')
   window.removeEventListener('keydown', moveDodger)
   console.log('dodger movement listener removed')
