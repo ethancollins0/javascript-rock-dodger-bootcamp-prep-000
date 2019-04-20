@@ -109,9 +109,6 @@ function endGame() {
 }
 
 function moveDodger(e) {
-  if (e.which !== LEFT_ARROW && e.which !== RIGHT_ARROW) {
-    return
-  }
   if (e.which === LEFT_ARROW) {
     window.requestAnimationFrame(moveDodgerLeft)
   }
