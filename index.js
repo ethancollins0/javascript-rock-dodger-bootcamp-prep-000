@@ -88,6 +88,10 @@ window.requestAnimationFrame(moveRock)
         alert('lower')
       }
 
+      if (rock[i].style.top > 100) {
+        alert('lower')
+      }
+
     }
 
     // implement me!
