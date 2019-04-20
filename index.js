@@ -124,6 +124,7 @@ window.requestAnimationFrame(moveRock)
  */
 function endGame() {
   gameInterval = null
+  ROCKS = []
 }
 
 function moveDodger(e) {
