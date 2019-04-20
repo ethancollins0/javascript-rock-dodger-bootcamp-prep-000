@@ -81,9 +81,9 @@ window.requestAnimationFrame(moveRock)
     for (i = 0; i < rock.length; i++) {
 
 
-    if (checkCollision() === true) {
-      endGame()
-    }
+    //if (checkCollision() === true) {
+    //  endGame()
+  //  }
     if (positionToInteger(rock[i].style.top) < 360) {
       rock.splice(i, 1)
     } else {
