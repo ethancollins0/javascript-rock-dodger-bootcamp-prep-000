@@ -83,13 +83,9 @@ window.requestAnimationFrame(moveRock)
       if (checkCollision(rock[i]) === true) {
         endGame()
       }
-      console.log('test')
-      if (positionToInteger(rock[i].style.top) < 100) {
-      console.log('above')
-      }
 
       if (rock[i].style.top > 100) {
-        alert('below')
+        rock[i].remove()
       }
 
     }
