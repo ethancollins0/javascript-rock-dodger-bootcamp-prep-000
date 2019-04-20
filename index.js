@@ -14,7 +14,7 @@ var gameInterval = null
 
 document.addEventListener('keydown', function(e) {
 
-})
+});
 /**
  * Be aware of what's above this line,
  * but all of your work should happen below.
