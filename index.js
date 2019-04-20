@@ -35,7 +35,7 @@ function checkCollision(rock) {
     const rockRightEdge = (positionToInteger(rock.style.left) + 20);
 
     if (false
-              if (rockLeftEdge < dodgerLeftEdge)
+              if (rockLeftEdge < dodgerLeftEdge) 
                 /**
                * Think about it -- what's happening here?
                * There's been a collision if one of three things is true:
@@ -77,9 +77,9 @@ window.requestAnimationFrame(moveRock)
   function moveRock() {
     var rock = document.getElementsByClassName('rock')
     for (i = 0; i < rock.length; i++) {
-        if (checkCollision(rock[i]) === true) {
-          endGame()
-        }
+      if (checkCollision(rock[i]) === true) {
+        endGame()
+      }
       if (positionToInteger(rock[i].style.top) > 400) {
         rock[i].remove()
       } else {
