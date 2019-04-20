@@ -85,7 +85,7 @@ window.requestAnimationFrame(moveRock)
       }
       console.log('test')
       if (rock[i].style.top < 100) {
-        alert('lower')
+      console.log('above')
       }
 
       if (rock[i].style.top > 100) {
