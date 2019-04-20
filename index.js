@@ -101,8 +101,8 @@ return rock
 function endGame() {
   clearInterval(gameInterval)
   var rock = document.getElementsByClassName('rock')
-  while (rock.length > 0) {
-    rock[0].parentNode.removeChild(rock[0])
+  window.requestAnimationFrame(while (rock.length > 0) {
+    rock[0].parentNode.removeChild(rock[0]))
   }
   window.removeEventListener('keydown', moveDodger)
   alert('YOU LOSE!')
