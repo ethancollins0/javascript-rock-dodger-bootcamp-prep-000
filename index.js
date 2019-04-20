@@ -77,14 +77,14 @@ function createRock(x) {
    */
   function moveRock() {
     for each (rock in GAME) {
+      var rockTop = rock.style.top.replace('px', '')
+      var top = parseInt(rockTop, 10)
 
+      if (top < 400) {
+        rock.style.top = `${top + 2}px`
+      }
     }
-    var rockTop = rock.style.top.replace('px', '')
-    var top = parseInt(rockTop, 10)
-
-    if (top < 400) {
-      rock.style.top = `${top + 2}px`
-    }
+    
 
     // implement me!
     // (use the comments below to guide you!)
