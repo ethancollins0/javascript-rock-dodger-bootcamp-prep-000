@@ -105,7 +105,6 @@ function endGame() {
     rock[0].parentNode.removeChild(rock[0])
   }
   window.removeEventListener('keydown', moveDodger)
-  console.log('dodger movement listener removed')
   alert('YOU LOSE!')
 }
 
