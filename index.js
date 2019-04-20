@@ -23,7 +23,8 @@ var gameInterval = null
  });
 
  document.addEventListener('keydown', function(e) {
-
+   if (e.which ==== RIGHT_ARROW)
+    moveDodgerRight()
  });
 
 function checkCollision(rock) {
