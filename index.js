@@ -117,7 +117,6 @@ window.requestAnimationFrame(moveRock)
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
-  alert('endgame inner')
   clearInterval(gameInterval);
   $('rock').remove()
   ROCKS = []
