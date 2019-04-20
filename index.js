@@ -80,7 +80,7 @@ window.requestAnimationFrame(moveRock)
     var rockPosition = 0
     for (i = 0; i < rock.length; i++) {
       rockTop = positionToInteger(rock[i].style.top)
-      rock[i].style.top = `${rockTop + 10}px`
+      rock[i].style.top = `${rockTop + 20}px`
 
       if (checkCollision(rock[i]) === true) {
         endGame()
