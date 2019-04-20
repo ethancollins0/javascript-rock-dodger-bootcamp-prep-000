@@ -80,7 +80,7 @@ window.requestAnimationFrame(moveRock)
     var top = 0
 
     function step() {
-      rock.style.top = `${top += 2}px`
+      moveRocks.style.top = `${top += 2}px`
 
       if (top < 200) {
         window.requestAnimationFrame(step)
