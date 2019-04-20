@@ -122,7 +122,7 @@ function moveDodger(e) {
 }
 
 function moveDodgerLeft() {
-  
+
 }
 
 function moveDodgerRight() {
