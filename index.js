@@ -125,7 +125,6 @@ function endGame() {
   window.removeEventListener('keydown', moveDodger)
   console.log('dodger movement listener removed')
   alert('YOU LOSE!')
-  location.reload()
 }
 
 function moveDodger(e) {
