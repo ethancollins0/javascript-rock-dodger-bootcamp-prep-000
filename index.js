@@ -78,7 +78,7 @@ window.requestAnimationFrame(moveRock)
   function moveRock() {
     var rock = getElementsByClassName('rock')
       for (i = 0; i < rock.length; i++) {
-
+        rock[i] += 2
       }
     /* var i = 0 {
       while i < GAME.length
