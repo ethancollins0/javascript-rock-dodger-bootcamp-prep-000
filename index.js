@@ -84,7 +84,7 @@ window.requestAnimationFrame(moveRock)
         endGame()
       }
 
-      if (positionToInteger(rock[i].style.top) > 100) {
+      if (positionToInteger(rock[i].style.top) > 400) {
         rock[i].remove()
       }
 
