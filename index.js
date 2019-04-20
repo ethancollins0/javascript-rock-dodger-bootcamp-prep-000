@@ -76,6 +76,9 @@ function createRock(x) {
    * seems like a good pace.)
    */
   function moveRock() {
+    for each (rock in GAME) {
+
+    }
     var rockTop = rock.style.top.replace('px', '')
     var top = parseInt(rockTop, 10)
 
