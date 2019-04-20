@@ -78,7 +78,6 @@ window.requestAnimationFrame(moveRock)
   function moveRock() {
     var rock = document.getElementsByClassName('rock')
     for (i = 0; i < rock.length; i++) {
-
       if (checkCollision(rock[i]) === true) {
         endGame()
       }
