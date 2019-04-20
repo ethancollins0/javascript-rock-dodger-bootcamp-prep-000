@@ -23,7 +23,7 @@ var gameInterval = null
  });
 
  document.addEventListener('keydown', function(e) {
-   
+
  });
 
 function checkCollision(rock) {
