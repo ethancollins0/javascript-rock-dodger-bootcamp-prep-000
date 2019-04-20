@@ -80,7 +80,7 @@ window.requestAnimationFrame(moveRock)
     var top = 0
       for (i = 0; i < rockList.length; i++) {
         rockList[i].style.top.replace('px', '')
-        top = parseInt(rock[i], 10)
+        top = parseInt(rockList[i], 10)
         rockList[i].style.top = `${top + 2}px`
       }
     /* var i = 0 {
