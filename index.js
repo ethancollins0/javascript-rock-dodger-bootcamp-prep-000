@@ -77,7 +77,7 @@ window.requestAnimationFrame(moveRock)
    */
   function moveRock() {
     var top = rock.style.top.replace('px', '')
-    rock.style.top = `${top + 2}`
+    rock.style.top = `${top + 2}px`
     // implement me!
     // (use the comments below to guide you!)
     /**
