@@ -77,6 +77,10 @@ window.requestAnimationFrame(moveRock)
    */
   function moveRock() {
     var top = 0
+
+    function step() {
+      rock.style.top += 2
+    }
     // implement me!
     // (use the comments below to guide you!)
     /**
