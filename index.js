@@ -77,7 +77,7 @@ function createRock(x) {
    */
   function moveRock() {
     function step() {
-      rock.style.top += 2
+      GAME(rock) += 2
 
       if (rock.style.top < 200) {
         window.requestAnimationFrame(step)
