@@ -83,11 +83,6 @@ window.requestAnimationFrame(moveRock)
       rock[i].style.top = `${rockTop + 2}px`
     }
 
-    if (checkCollision() === true) {
-      endGame()
-
-    if (positionToInteger(rock[i].style.top) < 400 )
-
     // implement me!
     // (use the comments below to guide you!)
     /**
