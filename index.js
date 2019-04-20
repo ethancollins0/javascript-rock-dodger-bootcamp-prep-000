@@ -125,6 +125,7 @@ window.requestAnimationFrame(moveRock)
 function endGame() {
   gameInterval = null
   ROCKS = []
+  window.removeEventListener('keydown', moveDodger)
 }
 
 function moveDodger(e) {
