@@ -76,16 +76,7 @@ window.requestAnimationFrame(moveRock)
    * seems like a good pace.)
    */
   function moveRock() {
-    const moveRocks = document.getElementsByClassName('rock')
-    var top = 0
-
-    function step() {
-      moveRocks.style.top = `${top += 2}px`
-
-      if (top < 200) {
-        window.requestAnimationFrame(step)
-      }
-    }
+    
     // implement me!
     // (use the comments below to guide you!)
     /**
