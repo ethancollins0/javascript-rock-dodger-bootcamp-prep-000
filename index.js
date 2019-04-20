@@ -76,9 +76,9 @@ window.requestAnimationFrame(moveRock)
    * seems like a good pace.)
    */
   function moveRock() {
-    console.log('test')
     var rock = document.getElementsByClassName('rock')
     for (i = 0; i < rock.length; i++) {
+          console.log('test')
       rockTop = positionToInteger(rock[i].style.top)
       rock[i].style.top = `${rockTop + 20}px`
 
