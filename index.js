@@ -119,7 +119,7 @@ window.requestAnimationFrame(moveRock)
 function endGame() {
   alert('endgame inner')
   clearInterval(gameInterval);
-  window.requestAnimationFrame($('rock').remove())
+  $('rock').remove())
   window.removeEventListener('keydown', moveDodger)
   alert('YOU LOSE!')
 }
