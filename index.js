@@ -59,6 +59,7 @@ function createRock(x) {
 
   GAME.appendChild(rock)
 window.requestAnimationFrame(moveRock)
+return rock
   /**
    * Now that we have a rock, we'll need to append
    * it to GAME and move it downwards.
