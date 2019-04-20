@@ -121,7 +121,7 @@ function endGame() {
   console.log('interval cleared')
   //$('rock').remove()
   ROCKS = []
-  console.log('rocks array zeroed')
+  console.log('rocks array emptied')
   window.removeEventListener('keydown', moveDodger)
   alert('YOU LOSE!')
 }
