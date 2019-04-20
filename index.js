@@ -124,7 +124,7 @@ function endGame() {
   }
   window.removeEventListener('keydown', moveDodger)
   console.log('dodger movement listener removed')
-  alert('YOU LOSE!')
+  setTimeout(alert('YOU LOSE!'), 1000)
 }
 
 function moveDodger(e) {
