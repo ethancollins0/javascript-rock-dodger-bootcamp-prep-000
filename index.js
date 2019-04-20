@@ -77,7 +77,7 @@ function createRock(x) {
    */
   function moveRock() {
 
-    var rockTop = DODGER.style.left.replace('px', '')
+    var rockTop = rock.style.top.replace('px', '')
     var left = parseInt(leftNumbers, 10)
 
     if (left > 0) {
