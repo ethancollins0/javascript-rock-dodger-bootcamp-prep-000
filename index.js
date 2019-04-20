@@ -78,7 +78,7 @@ function createRock(x) {
   function moveRock() {
 
     var rockTop = rock.style.top.replace('px', '')
-    var left = parseInt(leftNumbers, 10)
+    var top = parseInt(leftNumbers, 10)
 
     if (left > 0) {
       DODGER.style.left = `${left - 4}px`
