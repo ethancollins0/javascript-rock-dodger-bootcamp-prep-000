@@ -76,10 +76,10 @@ window.requestAnimationFrame(moveRock)
    * seems like a good pace.)
    */
   function moveRock() {
-    var rockList = document.getElementsByClassName('rock')
-    for (i = 0; i < rockList.length; i++) {
-      rockList[i].style.top.replace('px', '')
-      rockList[i].style.top = `${rockList[i] + 2}px`
+    var rock = document.getElementsByClassName('rock')
+    for (i = 0; i < rock.length; i++) {
+      rock[i].style.top.replace('px', '')
+      rock[i].style.top = `${rock[i] + 2}px`
     }
 
     // implement me!
