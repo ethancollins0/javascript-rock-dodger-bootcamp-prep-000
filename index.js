@@ -83,7 +83,7 @@ window.requestAnimationFrame(moveRock)
 
     if (checkCollision() === true) {
       endGame()
-
+}
     if (positionToInteger(rock[i].style.top) < 400) {
       rock.splice(i, 1)
     } else {
@@ -170,5 +170,4 @@ function start() {
   gameInterval = setInterval(function() {
     createRock(Math.floor(Math.random() *  (GAME_WIDTH - 20)))
   }, 1000)
-}
 }
