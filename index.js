@@ -59,7 +59,7 @@ function createRock(x) {
   rock.style.left = `${x}px`
 
   // Hmmm, why would we have used `var` here?
-  var top = '0px'
+  var top = '10'
 
   rock.style.top = top
 
