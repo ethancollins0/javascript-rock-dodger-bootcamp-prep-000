@@ -86,7 +86,7 @@ window.requestAnimationFrame(moveRock)
         endGame()
       }
       if (rock[i].style.top < 100) {
-        document.getElementById('game').removeChild(rock[i])
+        GAME.removeChild(rock[i])
       }
 
     }
