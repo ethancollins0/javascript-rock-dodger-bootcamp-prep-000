@@ -81,7 +81,7 @@ function createRock(x) {
     var top = parseInt(rockTop, 10)
 
     if (top < 400) {
-      rock.style.top = `${left - 4}px`
+      rock.style.top = `${top + 2}px`
     }
 
     // implement me!
