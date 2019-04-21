@@ -58,7 +58,7 @@ function createRock(x) {
   rock.style.top = top
 
   GAME.appendChild(rock)
-window.requestAnimationFrame(moveRock)
+moveRock()
 return rock
   /**
    * Now that we have a rock, we'll need to append
