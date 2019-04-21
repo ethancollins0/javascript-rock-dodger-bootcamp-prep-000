@@ -75,7 +75,7 @@ return rock
     for (i = 0; i < rock.length; i++) {
       if (checkCollision(rock[i]) === true) {
         endGame()
-        return
+        alert('YOU LOSE!')
       }
       if (positionToInteger(rock[i].style.top) > 400) {
         rock[i].remove()
