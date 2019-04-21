@@ -100,10 +100,11 @@ return rock
  */
 function endGame() {
   clearInterval(gameInterval)
-
-    ROCKS.forEach(function(rock) {
-      rock.remove()
-      //document.getElementsByClassName('rock')
+    var rockList = document.getElementsByClassName('rock')
+    for (i = 0; i < rockList.length) {
+      rockList.remove()
+    }
+    
     })
 
   window.removeEventListener('keydown', moveDodger)
