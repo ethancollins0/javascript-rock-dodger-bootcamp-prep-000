@@ -102,7 +102,7 @@ function endGame() {
   clearInterval(gameInterval)
   var rock = document.getElementsByClassName('rock')
   while (rock.length > 0) {
-    setTimeout(rock[0].parentNode.removeChild(rock[0]), 500)
+    setTimeout((rock[0].parentNode.removeChild(rock[0])), 500)
   }
   window.removeEventListener('keydown', moveDodger)
   alert('YOU LOSE!')
