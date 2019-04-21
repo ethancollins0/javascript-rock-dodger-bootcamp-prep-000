@@ -102,12 +102,9 @@ return rock
 function endGame() {
   clearInterval(gameInterval)
   var rock = document.getElementsByClassName('rock')
-  /*function removeRocks() {
-    rock[0].parentNode.removeChild(rock[0])
-    ROCKS.pop()
-  }*/
+
   for (i = rock.length-1; i > 0; i--) {
-    rock.parentNode.removeChild(rock[i])
+    rock[i].parentNode.removeChild(rock[i])
     //rock[i].parentNode.removeChild(rock[i])
 }
   window.removeEventListener('keydown', moveDodger)
