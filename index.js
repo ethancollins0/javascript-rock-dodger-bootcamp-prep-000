@@ -20,13 +20,18 @@ var gameInterval = null
 function checkCollision(rock) {
   const top = positionToInteger(rock.style.top)
 
+  // rocks are 20px high
+  // DODGER is 20px high
+  // GAME_HEIGHT - 20 - 20 = 360px;
   if (top > 360) {
     const dodgerLeftEdge = positionToInteger(DODGER.style.left)
 
+    //FIXME: The DODGER is 40 pixels wide -- how do we get the right edge?
     const dodgerRightEdge = (positionToInteger(DODGER.style.left) + 40);
 
     const rockLeftEdge = positionToInteger(rock.style.left)
 
+    // FIXME: The rock is 20 pixel's wide -- how do we get the right edge?
     const rockRightEdge = (positionToInteger(rock.style.left) + 20);
 
     if ((rockLeftEdge < dodgerLeftEdge) && (rockRightEdge > dodgerLeftEdge)) {
@@ -47,14 +52,18 @@ function createRock(x) {
   rock.className = 'rock'
   rock.style.left = `${x}px`
 
+  // Hmmm, why would we have used `var` here?
   var top = 0
 
   rock.style.top = top
 
   GAME.appendChild(rock)
   moveRock()
-  //return rock
-
+  return rock
+  /**
+   * Now that we have a rock, we'll need to append
+   * it to GAME and move it downwards.
+   */
 }
 
   /**
@@ -68,10 +77,9 @@ function createRock(x) {
         endGame()
         return
       }
-      if (positionToInteger(rock[i].style.top) > 395) {
+      if (positionToInteger(rock[i].style.top) > 400) {
         rock[i].remove()
         ROCKS.splice(i, 1)
-        window.requestAnimationFrame(moveRock);
       } else {
         rockTop = positionToInteger(rock[i].style.top)
         rock[i].style.top = `${rockTop + 20}px`
