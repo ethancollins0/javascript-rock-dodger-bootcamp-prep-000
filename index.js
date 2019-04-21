@@ -74,12 +74,11 @@ return rock
     var rock = document.getElementsByClassName('rock')
     for (i = 0; i < rock.length; i++) {
       if (checkCollision(rock[i]) === true) {
-        window.endGame()
+        endGame()
         return
       }
       if (positionToInteger(rock[i].style.top) > 400) {
-        rock.remove
-        ROCKS.splice(i, 1)
+        rock[i].remove()
       } else {
         rockTop = positionToInteger(rock[i].style.top)
         rock[i].style.top = `${rockTop + 20}px`
@@ -105,7 +104,7 @@ function endGame() {
     ROCKS.forEach(function(rock) {
       rock.remove()
     })
-
+    
   window.removeEventListener('keydown', moveDodger)
   alert('YOU LOSE!')
 }
