@@ -74,7 +74,7 @@ return rock
     var rock = document.getElementsByClassName('rock')
     for (i = 0; i < rock.length; i++) {
       if (checkCollision(rock[i]) === true) {
-        window.requestAnimationFrame(endGame)
+        endGame()
         return
       }
       if (positionToInteger(rock[i].style.top) > 400) {
@@ -82,7 +82,7 @@ return rock
         ROCKS.splice(i, 1)
       } else {
         rockTop = positionToInteger(rock[i].style.top)
-        rock[i].style.top = `${rockTop + 74}px`
+        rock[i].style.top = `${rockTop + 20}px`
       }
 
     }
@@ -101,12 +101,11 @@ return rock
  */
 function endGame() {
   clearInterval(gameInterval)
-    var rockList = document.getElementsByClassName('rock')
-    while (0 > rockList.length) {
-      rockList[0].parentNode.removeChild(rockList[0])
-      ROCKS.pop()
-    }
+  var rock = document.getElementsByClassName('rock')
 
+  for (i = rock.length-1; i > 0; i--) {
+    rock[i].remove()
+}
   window.removeEventListener('keydown', moveDodger)
   alert('YOU LOSE!')
 }
