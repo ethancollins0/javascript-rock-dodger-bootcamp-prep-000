@@ -103,11 +103,12 @@ function endGame() {
   clearInterval(gameInterval)
   var rock = document.getElementsByClassName('rock')
   function removeRocks() {
-    while (rock.length > 0) {
     rock[0].parentNode.removeChild(rock[0])
     ROCKS.pop()
-  }}
+  }
+  for (i = 0; i < rock.length) {
   window.requestAnimationFrame(removeRocks)
+}
   window.removeEventListener('keydown', moveDodger)
   alert('YOU LOSE!')
 }
