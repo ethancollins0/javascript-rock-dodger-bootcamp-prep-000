@@ -75,7 +75,6 @@ return rock
     for (i = 0; i < rock.length; i++) {
       if (checkCollision(rock[i]) === true) {
         endGame()
-        alert('YOU LOSE!')
         return
       }
       if (positionToInteger(rock[i].style.top) > 400) {
@@ -106,7 +105,7 @@ function endGame() {
     rock[0].parentNode.removeChild(rock[0])
   }
   window.removeEventListener('keydown', moveDodger)
-  return
+  alert('YOU LOSE!')
 }
 
 function moveDodger(e) {
