@@ -107,7 +107,8 @@ function endGame() {
     ROCKS.pop()
   }*/
   for (i = rock.length-1; i > 0; i--) {
-    rock[i].parentNode.removeChild(rock[i])
+    $('rock'[i].remove)
+    //rock[i].parentNode.removeChild(rock[i])
 }
   window.removeEventListener('keydown', moveDodger)
   alert('YOU LOSE!')
