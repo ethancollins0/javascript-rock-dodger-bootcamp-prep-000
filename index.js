@@ -107,6 +107,7 @@ function endGame() {
     rock[0].parentNode.removeChild(rock[0])
     ROCKS.pop()
   }}
+  requestAnimationFrame(removeRocks)
 
   window.removeEventListener('keydown', moveDodger)
   alert('YOU LOSE!')
