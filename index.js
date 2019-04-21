@@ -54,7 +54,7 @@ function createRock(x) {
   GAME.appendChild(rock)
   moveRock()
   //return rock
-  
+
 }
 
   /**
