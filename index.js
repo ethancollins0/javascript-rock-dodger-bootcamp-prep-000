@@ -75,6 +75,7 @@ function createRock(x) {
         rockTop = positionToInteger(rock[i].style.top)
         rock[i].style.top = `${rockTop + 20}px`
       }
+      window.requestAnimationFrame(moveRock);
 
     }
 
