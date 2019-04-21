@@ -102,7 +102,7 @@ function endGame() {
   clearInterval(gameInterval)
 
     ROCKS.forEach(function(rock) {
-      rock.pop()
+      rock.remove()
       //document.getElementsByClassName('rocks')
     })
 
