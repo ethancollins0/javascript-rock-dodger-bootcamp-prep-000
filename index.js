@@ -102,7 +102,7 @@ function endGame() {
   clearInterval(gameInterval)
     var rockList = document.getElementsByClassName('rock')
     for (i = 0; i < rockList.length) {
-      rockList.remove()
+      rockList.parentNode.removeChild(rockList)
     }
 
     })
