@@ -103,7 +103,7 @@ function endGame() {
   clearInterval(gameInterval)
   var rock = document.getElementsByClassName('rock')
 
-  forEach (rock in ROCKS) {
+  ROCKS.forEach(function(rock)) {
     rock.remove()
   }
 }
