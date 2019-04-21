@@ -103,7 +103,7 @@ function endGame() {
 
     ROCKS.forEach(function(rock) {
       rock.pop()
-      document.getElementsByClassName('rocks')
+      //document.getElementsByClassName('rocks')
     })
 
   window.removeEventListener('keydown', moveDodger)
