@@ -78,7 +78,7 @@ return rock
         return
       }
       if (positionToInteger(rock[i].style.top) > 400) {
-        rock[i].remove()
+        rock.remove
         ROCKS.splice(i, 1)
       } else {
         rockTop = positionToInteger(rock[i].style.top)
