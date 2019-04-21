@@ -101,9 +101,9 @@ return rock
 function endGame() {
   clearInterval(gameInterval)
     var rockList = document.getElementsByClassName('rock')
-    for (i = 0; i < rockList.length) {
+    //for (i = 0; i < rockList.length) {
       rockList.parentNode.removeChild(rockList)
-    }
+  //  }
 
     })
 
