@@ -106,7 +106,6 @@ function removeRocks() {
     rock.remove()
   })
 }
-window.requestAnimationFrame(removeRocks)
   window.removeEventListener('keydown', moveDodger)
   alert('YOU LOSE!')
 }
