@@ -59,7 +59,7 @@ function createRock(x) {
 
   GAME.appendChild(rock)
   moveRock()
-return rock
+  return rock
   /**
    * Now that we have a rock, we'll need to append
    * it to GAME and move it downwards.
