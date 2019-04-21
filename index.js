@@ -102,7 +102,8 @@ return rock
 function endGame() {
   clearInterval(gameInterval)
   var rock = document.getElementsByClassName('rock')
-  function removeRocks() {while (rock.length > 0) {
+  function removeRocks() {
+    while (rock.length > 0) {
     rock[0].parentNode.removeChild(rock[0])
     ROCKS.pop()
   }}
