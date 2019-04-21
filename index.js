@@ -108,7 +108,6 @@ function endGame() {
     ROCKS.pop()
   }}
   requestAnimationFrame(removeRocks)
-
   window.removeEventListener('keydown', moveDodger)
   alert('YOU LOSE!')
 }
