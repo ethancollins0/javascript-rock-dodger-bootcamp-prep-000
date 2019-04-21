@@ -105,7 +105,7 @@ function endGame() {
       rockList.parentNode.removeChild(rockList)
   //  }
 
-    })
+    
 
   window.removeEventListener('keydown', moveDodger)
   alert('YOU LOSE!')
