@@ -68,7 +68,7 @@ function createRock(x) {
         endGame()
         return
       }
-      if (positionToInteger(rock[i].style.top) > 380) {
+      if (positionToInteger(rock[i].style.top) > 395) {
         rock[i].remove()
         ROCKS.splice(i, 1)
       } else {
